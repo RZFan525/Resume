@@ -136,6 +136,28 @@ table {
 
 /* 第二栏 */
 
+#second .box {
+    width: 100%;
+    padding: 0px 8%;
+    margin-top: 50px;
+    visibility: hidden;
+}
+
+#second .box a {
+    font: 16px/25px "microsoft yahei";
+    background-color: rgba(234, 246, 208, 0.9);
+    border-radius: 10px;
+    margin: 7px;
+    padding: 5px 15% 5px 10px;
+    color: #336699;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#second .box p:nth-child(2n) a {
+    background-color: rgba(234, 246, 180, 0.9);
+}
+
 
 /* 第三栏 */
 

@@ -7,6 +7,8 @@ $(function() {
         navigationTooltips: ['个人信息', '专业技能', '学科竞赛', '科研经历', '获奖情况'],
         menu: "#menu",
         afterLoad: function(afterlink, index) {
+            //index: 进入的页序号
+            //afterlink 进入的页anchor
             var $anim = $(".section").eq(index.index).find(".animated");
 
             function addAnimated(flag) {
@@ -23,7 +25,7 @@ $(function() {
                     });
                 }
             }
-            switch (index.index) {
+            switch (index.index + 1) {
                 case 1:
                     addAnimated();
                     break;
@@ -46,6 +48,7 @@ $(function() {
             }
         },
         onLeave: function(index, nextIndex, direction) {
+            //index:进入之前的页
             var $anim = $(".section").eq(index.index).find(".animated");
             $anim.each(function(i) {
                 var that = this;
