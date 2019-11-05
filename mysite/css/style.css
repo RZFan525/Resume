@@ -161,6 +161,85 @@ table {
 
 /* 第三栏 */
 
+.box1 {
+    margin: 15% 10% 0% 10%;
+    position: relative;
+    vertical-align: middle;
+    color: white;
+}
+
+.box1 .f1 {
+    float: left;
+}
+
+.box1 span {
+    display: block;
+    padding-left: 25px;
+    margin-right: 50px;
+}
+
+.box1 span:nth-of-type(2) {
+    /*调整时间线之间的距离*/
+    margin: 150px 0;
+}
+
+.box1 span::before,
+.detail>div p::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: #46B0B9;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: 3px 0 0 -25px;
+    z-index: 1;
+}
+
+#third .line {
+    background-color: #fff;
+    width: 4px;
+    height: 0%;
+    position: absolute;
+    left: 7px;
+    top: 3px;
+}
+
+#third .detail {
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#third .detail>div {
+    height: 150px;
+    /*background-color: darkcyan;*/
+    /*border: 1px solid #000;*/
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.detail>div h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.detail>div p {
+    font-size: 16px;
+    line-height: 22px;
+    /*行高*/
+    text-indent: 20px;
+    /*首行缩进*/
+}
+
+.detail>div p::before {
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 5px;
+    height: 5px;
+    margin: 10px 0 0 -15px;
+}
+
 
 /* 第四栏 */
 

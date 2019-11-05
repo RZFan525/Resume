@@ -4,7 +4,7 @@ $(function() {
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
         navigation: true,
         navigationPosition: "right",
-        navigationTooltips: ['个人信息', '专业技能', '学科竞赛', '科研经历', '获奖情况'],
+        navigationTooltips: ['个人信息', '专业技能', '科研经历', '学科竞赛', '获奖情况'],
         menu: "#menu",
         afterLoad: function(afterlink, index) {
             //index: 进入的页序号
