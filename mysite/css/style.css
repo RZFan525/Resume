@@ -243,5 +243,178 @@ table {
 
 /* 第四栏 */
 
+#fourth {
+    padding: 20px 8% 0;
+}
+
+#fourth i {
+    font-style: normal
+}
+
+#fourth li {
+    list-style-type: none;
+    /*去掉前面的黑点*/
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin: 15px 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    visibility: hidden;
+    animation-fill-mode: none;
+    /*解决animate动画后变换无效，这属性在animated类中；规定动画在播放之前或之后，其动画效果是否可见*/
+}
+
+#fourth li:hover {
+    transform: scale(1.2) !important;
+}
+
+#fourth li a.hover-bg {
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+    position: relative;
+}
+
+#fourth li a span {
+    width: 200px;
+}
+
+.hover-bg .hover-text {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.66);
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25% 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.hover-bg:hover .hover-text {
+    opacity: 1;
+}
+
+.hover-bg .hover-text>i {
+    display: block;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: all 0.3s;
+}
+
+.hover-bg:hover .hover-text>i {
+    opacity: 1;
+    /* visibility: hidden; */
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.hover-bg .hover-text>b {
+    display: block;
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+
+.hover-bg:hover .hover-text>b {
+    opacity: 1;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+#fourth li img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
 
 /* 第五栏 */
+
+#fifth {
+    background-color: #0d63b9;
+    text-align: center;
+}
+
+#fifth .ceil,
+#fifth .floor {
+    width: 100%;
+    left: 0;
+    height: 50%;
+    background-color: #46C8AF;
+    position: absolute;
+    z-index: 1;
+}
+
+#fifth .ceil {
+    top: 0;
+}
+
+#fifth .floor {
+    bottom: 0;
+}
+
+#fifth .word {
+    text-align: center;
+    font: 18px "microsoft yahei", "arial";
+    color: #fff;
+}
+
+#fifth .word .contact_box {
+    display: inline-block;
+    text-align: left;
+}
+
+#fifth .word .contact {
+    margin: 10px 0;
+}
+
+#fifth .word .contact p {
+    margin-top: 10px;
+}
+
+#fifth .word .contact .qq {
+    margin-bottom: 10px;
+}
+
+#fifth .word .contact .phone::before {
+    content: "";
+    background-image: url(../images/phone.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 3px 0 0 -25px;
+    z-index: 0;
+}
+
+#fifth .word .contact .email::before {
+    content: "";
+    background-image: url(../images/email.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 3px 0 0 -25px;
+    z-index: 0;
+}
+
+#fifth .word .contact .qq::before {
+    content: "";
+    background-image: url(../images/qq.png);
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 3px 0 0 -25px;
+    z-index: 0;
+}

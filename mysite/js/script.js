@@ -4,7 +4,7 @@ $(function() {
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
         navigation: true,
         navigationPosition: "right",
-        navigationTooltips: ['个人信息', '专业技能', '科研经历', '学科竞赛', '获奖情况'],
+        navigationTooltips: ['个人信息', '专业技能', '科研经历', '学科竞赛', '联系我'],
         menu: "#menu",
         afterLoad: function(afterlink, index) {
             //index: 进入的页序号
@@ -41,7 +41,7 @@ $(function() {
                     break;
                 case 5:
                     setTimeout(function() {
-                        $('#fifth .overT,#fifth .overB').animate({ 'height': '30%' }, 400).find('#callme').addClass("callme");
+                        $('#fifth .ceil,#fifth .floor').animate({ 'height': '30%' }, 400);
                     }, 400);
                     break;
 
@@ -49,6 +49,12 @@ $(function() {
         },
         onLeave: function(index, nextIndex, direction) {
             //index:进入之前的页
+            if (index.index + 1 == 3) {
+                $('.line').animate({ "height": "0%" }, 100);
+            }
+            if (index.index + 1 == 5) {
+                $('#fifth .ceil,#fifth .floor').animate({ 'height': '50%' }, 400);
+            }
             var $anim = $(".section").eq(index.index).find(".animated");
             $anim.each(function(i) {
                 var that = this;
