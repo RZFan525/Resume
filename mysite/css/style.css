@@ -418,3 +418,8 @@ table {
     margin: 3px 0 0 -25px;
     z-index: 0;
 }
+
+#fifth .word .contact a {
+    text-decoration: none;
+    color: white;
+}
