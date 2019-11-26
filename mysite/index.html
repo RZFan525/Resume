@@ -13,24 +13,26 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript" src="js/script.js" defer="defer"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
     <title>Vfrz-个人简历</title>
 </head>
 
 <body>
+    <audio autoplay='autoplay' loop='loop' src="music/AlwaysWithMe.mp3"></audio>
     <div id="top">
         <div id="logo" class="left">
             <a href="#"><img src="images/name.png" alt="Vfrz"></a>
-            <audio autoplay='autoplay' loop='loop' src="music/AlwaysWithMe.mp3"></audio>
+
         </div>
 
     </div>
     <div id="fullpage">
         <ul id="menu" class="right">
-            <li data-menuanchor="page1" class="active"><a href="#page1">个人信息</a></li>
-            <li data-menuanchor="page2"><a href="#page2">专业技能</a></li>
-            <li data-menuanchor="page3"><a href="#page3">科研经历</a></li>
-            <li data-menuanchor="page4"><a href="#page4">学科竞赛</a></li>
-            <li data-menuanchor="page5"><a href="#page5">联系我</a></li>
+            <li data-menuanchor="profile" class="active"><a href="#profile">个人信息</a></li>
+            <li data-menuanchor="skill"><a href="#skill">专业技能</a></li>
+            <li data-menuanchor="research"><a href="#research">科研经历</a></li>
+            <li data-menuanchor="competition"><a href="#competition">学科竞赛</a></li>
+            <li data-menuanchor="contact"><a href="#contact">联系我</a></li>
         </ul>
         <div class="section active" id="first">
             <div class="f1 ">
@@ -89,7 +91,7 @@
         <div class="section" id="fourth">
             <ul>
                 <li class="animated" data-anim="bounceInDown">
-                    <a href="#" class="hover-bg">
+                    <a href="#" class="hover-bg r1">
                         <span class="hover-text">
                             <i>名称：全国MBA培养院校企业竞争模拟大赛</i>
                             <b>奖项：全国二等奖</b>
@@ -161,6 +163,12 @@
                     </a>
                 </li>
             </ul>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p></p>
+                </div>
+            </div>
         </div>
         <div class="section" id="fifth">
             <div class='ceil'></div>

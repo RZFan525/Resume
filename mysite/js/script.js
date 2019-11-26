@@ -1,7 +1,7 @@
 $(function() {
     $('#fullpage').fullpage({
         sectionsColor: ['darkcyan', '#2AB561', '#826B68', '#EA6153', "#993366"],
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        anchors: ['profile', 'skill', 'research', 'competition', 'contact'],
         navigation: true,
         navigationPosition: "right",
         navigationTooltips: ['个人信息', '专业技能', '科研经历', '学科竞赛', '联系我'],
