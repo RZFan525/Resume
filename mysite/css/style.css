@@ -390,6 +390,10 @@ table {
     text-align: center;
 }
 
+.modal-content p {
+    text-indent: 2em;
+}
+
 
 /* 第五栏 */
 
