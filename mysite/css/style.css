@@ -338,9 +338,9 @@ table {
 }
 
 .modal {
-    display: display;
+    display: none;
     /* Hidden by default */
-    position: fixed;
+    position: absolute;
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
@@ -380,6 +380,14 @@ table {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-content h3 {
+    text-align: center;
+}
+
+.modal-content h5 {
+    text-align: center;
 }
 
 
