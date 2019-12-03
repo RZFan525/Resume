@@ -266,7 +266,7 @@ table {
 }
 
 #fourth li:hover {
-    transform: scale(1.2) !important;
+    transform: scale(1.2);
 }
 
 #fourth li a.hover-bg {

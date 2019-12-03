@@ -30,14 +30,14 @@ $(function() {
                     addAnimated();
                     break;
                 case 2:
-                    addAnimated(1);
+                    addAnimated(1); //
                     break;
                 case 3:
                     $('.line').animate({ "height": "100%" }, 1000);
                     addAnimated();
                     break;
                 case 4:
-                    addAnimated(1);
+                    addAnimated(1); //
                     break;
                 case 5:
                     setTimeout(function() {
@@ -47,7 +47,7 @@ $(function() {
 
             }
         },
-        onLeave: function(index, nextIndex, direction) {
+        onLeave: function(index) {
             //index:进入之前的页
             if (index.index + 1 == 3) {
                 $('.line').animate({ "height": "0%" }, 100);
